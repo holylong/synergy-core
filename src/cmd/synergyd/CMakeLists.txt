@@ -18,10 +18,9 @@ file(GLOB headers "*.h")
 file(GLOB sources "*.cpp")
 
 if (WIN32)
-    add_executable (synergyd WIN32 ${sources})
+    add_executable (sgyd WIN32 ${sources})
 else()
-    add_executable (synergyd ${sources})
+    add_executable (sgyd ${sources})
 endif()
 
-target_link_libraries (synergyd
-    arch base common io ipc mt net platform synlib shared ${libs})
+target_link_libraries (sgyd arch base common io ipc mt net platform synlib shared ${libs})

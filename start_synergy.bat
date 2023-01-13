@@ -1,0 +1,1 @@
+synergys.exe -c Synergy.c16692 -d DEBUG1

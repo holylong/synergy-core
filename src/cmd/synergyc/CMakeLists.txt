@@ -46,13 +46,12 @@ if (SYNERGY_ADD_HEADERS)
     list(APPEND sources ${headers})
 endif()
 
-add_executable(synergyc ${sources})
-target_link_libraries(synergyc
-    arch base client common io mt net ipc platform server synlib ${libs})
+add_executable(sgyc ${sources})
+target_link_libraries(sgyc arch base client common io mt net ipc platform server synlib ${libs})
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-    install (TARGETS synergyc DESTINATION ${SYNERGY_BUNDLE_BINARY_DIR})
+    install (TARGETS sgyc DESTINATION ${SYNERGY_BUNDLE_BINARY_DIR})
 elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
-    install (TARGETS synergyc DESTINATION bin)
+    install (TARGETS sgyc DESTINATION bin)
 endif()
 

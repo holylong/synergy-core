@@ -1,0 +1,47 @@
+section: screens
+	hexmeet:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none 
+		switchCornerSize = 0
+	DESKTOP-GQCD017:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none 
+		switchCornerSize = 0
+	Skyer:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none 
+		switchCornerSize = 0
+end
+
+section: aliases
+end
+
+section: links
+	hexmeet:
+		right = DESKTOP-GQCD017
+	DESKTOP-GQCD017:
+		right = Skyer
+		left = hexmeet
+	Skyer:
+		left = DESKTOP-GQCD017
+end
+
+section: options
+	relativeMouseMoves = false
+	win32KeepForeground = false
+	disableLockToScreen = false
+	clipboardSharing = true
+	clipboardSharingSize = 3072
+	switchCorners = none 
+	switchCornerSize = 0
+end
+
