@@ -1,5 +1,5 @@
 section: screens
-	Home:
+	hexmeet:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
@@ -26,13 +26,13 @@ section: aliases
 end
 
 section: links
-	Home:
-		left = DESKTOP-GQCD017
-	DESKTOP-GQCD017:
-		left = Skyer
-		right = Home
-	Skyer:
+	hexmeet:
 		right = DESKTOP-GQCD017
+	DESKTOP-GQCD017:
+		right = Skyer
+		left = hexmeet
+	Skyer:
+		left = DESKTOP-GQCD017
 end
 
 section: options
@@ -40,7 +40,7 @@ section: options
 	win32KeepForeground = false
 	disableLockToScreen = false
 	clipboardSharing = true
-	clipboardSharingSize = 307200
+	clipboardSharingSize = 3072
 	switchCorners = none 
 	switchCornerSize = 0
 end
