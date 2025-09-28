@@ -31,6 +31,7 @@
 #include <iomanip>
 #include <algorithm>
 #include <cerrno>
+#include <cstdint>
 
 namespace synergy {
 namespace string {

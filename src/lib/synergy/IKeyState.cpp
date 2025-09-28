@@ -21,6 +21,7 @@
 
 #include <cstring>
 #include <cstdlib>
+#include <cstdint>
 
 //
 // IKeyState

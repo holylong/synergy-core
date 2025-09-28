@@ -6,7 +6,7 @@ section: screens
 		xtestIsXineramaUnaware = false
 		switchCorners = none 
 		switchCornerSize = 0
-	DESKTOP-GQCD017:
+	DESKTOP-C6OIDOV:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
@@ -27,12 +27,12 @@ end
 
 section: links
 	Home:
-		left = DESKTOP-GQCD017
-	DESKTOP-GQCD017:
-		left = Skyer
+		left = DESKTOP-C6OIDOV
+	DESKTOP-C6OIDOV:
 		right = Home
+		left = Skyer
 	Skyer:
-		right = DESKTOP-GQCD017
+		right = DESKTOP-C6OIDOV
 end
 
 section: options

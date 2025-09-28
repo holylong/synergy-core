@@ -1,1 +1,1 @@
-build_ninja\bin\Debug\sgys.exe -c Synergy.c16692 -d DEBUG1
+build_ninja\bin\sgys.exe -c Synergy.c16692 -d DEBUG1
