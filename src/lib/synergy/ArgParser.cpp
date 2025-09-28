@@ -273,14 +273,12 @@ ArgParser::parseGenericArgs(int argc, const char* const* argv, int& i)
         bool useDragDrop = true;
 
 #ifdef WINAPI_XWINDOWS
-
-        useDragDrop = false;
-        LOG((CLOG_INFO "ignoring --enable-drag-drop, not supported on linux."));
-
+        // Linux平台现在支持文件剪切板功能
+        // 注意：这启用的是文件剪切板支持，不是完整的拖放功能
+        LOG((CLOG_INFO "enabling file clipboard support on linux (partial drag-drop functionality)"));
 #endif
 
 #ifdef WINAPI_MSWINDOWS
-
         if (!IsWindowsVistaOrGreater()) {
             useDragDrop = false;
             LOG((CLOG_INFO "ignoring --enable-drag-drop, not supported below vista."));

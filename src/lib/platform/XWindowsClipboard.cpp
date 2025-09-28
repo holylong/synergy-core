@@ -23,6 +23,7 @@
 #include "platform/XWindowsClipboardUTF8Converter.h"
 #include "platform/XWindowsClipboardHTMLConverter.h"
 #include "platform/XWindowsClipboardBMPConverter.h"
+#include "platform/XWindowsClipboardFileConverter.h"
 #include "platform/XWindowsUtil.h"
 #include "mt/Thread.h"
 #include "arch/Arch.h"
@@ -77,6 +78,7 @@ XWindowsClipboard::XWindowsClipboard(Display* display,
     }
 
     // add converters, most desired first
+    m_converters.push_back(new XWindowsClipboardFileConverter(m_display));
     m_converters.push_back(new XWindowsClipboardHTMLConverter(m_display,
                                 "text/html"));
     m_converters.push_back(new XWindowsClipboardHTMLConverter(m_display,
