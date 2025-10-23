@@ -1,5 +1,5 @@
 section: screens
-	Home:
+	feiker:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
@@ -26,10 +26,10 @@ section: aliases
 end
 
 section: links
-	Home:
+	feiker:
 		left = DESKTOP-C6OIDOV
 	DESKTOP-C6OIDOV:
-		right = Home
+		right = feiker
 		left = Skyer
 	Skyer:
 		right = DESKTOP-C6OIDOV
